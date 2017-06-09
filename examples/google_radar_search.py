@@ -14,8 +14,8 @@ from classes.services.GoogleRadarSearch import *
 #
 
 scanner = Scanner()
-searchitems={"name": "ica", "types": "grocery_or_supermarket"};
-key="" # Insert your Google key here
+searchitems={"keyword": "restaurant", "type": "restaurant"};
+key="AIzaSyBFGZnKT7d0XOJqBxNw61XKu_EzVAA7tlI" # Insert your Google key here
 service = GoogleRadarSearch(searchitems, key)
 scanner.set_service(service)
 scanner.start_scanning()

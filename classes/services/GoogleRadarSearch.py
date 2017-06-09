@@ -52,7 +52,7 @@ class GoogleRadarSearch():
       for result in googleResponse.results:
          self.resultsN+=1
          markers.append(result['location'])
-         logger.log_result(str(self.resultsN) + " : " + str(result['location']))
+         logger.log_result(str(self.resultsN) + " : " + str(result['location']) + " --- Place ID: " + str(result['place_id']))
    
       return markers
 
@@ -81,7 +81,7 @@ class GoogleResponse():
             newResult = {}
             newResult['location']  = (loc[0].text, loc[1].text)
             newResult['reference'] = result.findall('reference')[0].text
-            newResult['id']        = result.findall('id')[0].text
+            newResult['place_id']        = result.findall('place_id')[0].text
             self.results.append(newResult)
             self.resultsN+=1
             #print(etree.tostring(result).decode("utf-8"))

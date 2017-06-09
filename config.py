@@ -18,13 +18,13 @@ config={
    # Scanning area
    #'SCANNING_AREA' : (61.5, 19, 59, 14),              # Central Sweden
    #'SCANNING_AREA' : (59.35, 18.05, 59.34, 18.07),    # Stockholm
-   'SCANNING_AREA' : (60, 15, 59, 18),                # Big area
+   'SCANNING_AREA' : (49.261755, -122.12677, 49.023236, -121.714783),                # Big area
 
    # Scanning box options
    'box':
    {
-      'X_DISTANCE' : 1000000,   # desirable width of box in m.
-      'Y_DISTANCE' : 1000000,   # desirable height of box in m.
+      'X_DISTANCE' : 10000,   # desirable width of box in m.
+      'Y_DISTANCE' : 10000,   # desirable height of box in m.
       'AUTOSPLIT'  : True      # autosplit the box if needed
    },
 
